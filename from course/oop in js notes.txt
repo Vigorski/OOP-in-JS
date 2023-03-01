@@ -1,0 +1,21 @@
+encapsulation - hide and secure props. direct access not possible unless provided in class,
+abstraction - hide implementation details and show only behavior,
+polymophism - objects share and override behavior of parents,
+inheritance - take properties from a different class.
+
+using the keyword 'new':
+    - creates a new object -> {}
+    - binds the this keyword to the newly created object
+    - finally the new object returns from the constructor
+basically similar to: ObjConstructor.call({}, argument)
+
+/////////
+prototype
+/////////
+Object.defineProperty(obj, 'propKey', {
+    this gives us the descriptors of the prop:
+    configurable - can you delete the prop
+    enumerable - can you iterate through or extract key/value with Object.entries/keys/values
+    writable - can you change the prop (add or modify value)
+})
+
